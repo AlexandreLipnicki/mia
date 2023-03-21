@@ -77,7 +77,7 @@ footer a{
 }
 #email{
     border-radius:12px;
-    border : 1px solid rgba(102,102,102,0.35);
+    border : 1px solid #E5E5E5;
     height: 45px;
     padding: 0 10px;
     width: 100%;
@@ -108,22 +108,22 @@ footer a{
 .block-1-text{
     width: 100%;
     max-width: 600px;
-    height: 80%;
+    height: 70%;
     padding: 60px 40px;
     border-radius:26px;
     background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .block-1-text h1{
     font-weight: 600;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .block-2{
     width:100%;
-    padding: 30px 40px;
+    padding: 40px 40px;
     display: flex;
     border-bottom: #C4C4C4 1px solid;
 }
@@ -143,9 +143,10 @@ footer a{
 }
 .block-3{
     width:100%;
-    padding: 40px;
+    padding: 80px 40px;
     display: flex;
     align-items: center;
+    border-bottom: #C4C4C4 1px solid;
 }
 .block-3-txt{
     width:50%;
@@ -157,7 +158,7 @@ footer a{
 }
 .block-3-img{
     width:50%;
-    height: 600px;
+    height: 400px;
     margin-left:40px;
     padding-right: 0;
 }
@@ -169,42 +170,10 @@ footer a{
 .block-4{
     width:100%;
     padding: 40px;
+    padding-top: 80px;
 }
 .block-4 h2{
     padding-left:40px;
-}
-
-/* ------------------  MANIFESTO ------------------ */
-.manifesto{
-    background-color: #1F1F1F;
-    width: 100%;
-    min-height: 90vh;
-}
-.manifesto-img{
-    margin:40px 0px;
-}
-.manifesto img{
-    width:100%;
-}
-.manifesto-inner{
-    padding:50px 50px;
-    display: flex;
-}
-.manifesto-block-1, .manifesto-block-2{
-    width: 50%;
-    height: 100%;
-    padding:30px;
-    margin:auto;
-}
-.manifesto-inner h2 {
-    margin:0;
-    color: rgba(255,255,255);
-    padding-bottom: 24px;
-}
-.manifesto p{
-    margin:0;
-    color: rgba(255,255,255,0.80);
-    padding-bottom:50px;
 }
 
 /* ------------------  MIA ------------------ */
@@ -239,25 +208,69 @@ footer a{
 .mia-text h1{
     margin:0;
     padding-bottom: 20px;
+    font-size:25px;
 }
 .mia-text p, .mia-text ul{
     margin:0;
-    padding-bottom:20px;
-    font-size:1.25rem;
+    padding-bottom:15px;
+    font-size:12px;
 }
 .mia-text li{
     list-style-position: inside;
-    font-size:1.25rem;
+    font-size:12px;
 }
-.mia-text button{
-    margin-left:auto;
-    margin-top: 20px;
+.mia-text #btn, .mia-text #email{
+    font-size: 12px;
+    height: 38px;
+    border-radius: 8px;
+}
+.form{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding-top:20px;
+}
+
+/* ------------------  MANIFESTO ------------------ */
+.manifesto{
+    background-color: #1F1F1F;
+    width: 100%;
+    min-height: 90vh;
+}
+.manifesto-img{
+    margin:40px 0px;
+}
+.manifesto img{
+    width:100%;
+}
+.manifesto-inner{
+    padding:50px 50px;
+    display: flex;
+}
+.manifesto-block-1, .manifesto-block-2{
+    width: 50%;
+    height: 100%;
+    padding:30px;
+    margin:auto;
+}
+.manifesto-inner h2 {
+    margin:0;
+    color: rgba(255,255,255);
+    padding-bottom: 24px;
+}
+.manifesto p{
+    margin:0;
+    color: rgba(255,255,255,0.80);
+    padding-bottom:50px;
+    font-size:12px;
 }
 
 /* ------------------  CARRIERE ------------------ */
 .carriere-img{
     width:100%;
-    height: 70vh;
+    height: 60vh;
 }
 .carriere-img img{
     width:100%;
@@ -281,8 +294,9 @@ footer a{
 #carriere-post{
     width:100%;
 }
-#carriere-post > div:last-child{
+#carriere-post > a:last-child{
     border-bottom: #C4C4C4 1px solid;
+    margin-bottom: 20px;
 }
 .poste{
     width:100%;
@@ -314,15 +328,54 @@ footer a{
 }
 .carriere-txt li, .blog-txt li{
     list-style-position: outside;
+    font-size: 14px;
+    line-height: 1.5;
 }
 .carriere-txt p, .blog-txt p{
     padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 /* ------------------  BLOG ------------------ */
 .blog{
     width:100%;
-    padding: 40px;
+    padding: 80px 40px;
+}
+.blog-1 {
+    width: 100%;
+    height: 90vh;
+    padding: 0 40px;
+    background-image: url(../img/Mirror404-homepagebanniere.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.blog-1-text{
+    width: 100%;
+    max-width: 600px;
+    height: 70%;
+    padding: 60px 40px;
+    border-radius:26px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-1-text h1{
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+.blog-1-text p{
+    padding-bottom: 40px;
+}
+.blog-1-text #btn{
+    height: 38px;
+    font-size:14px;
 }
 .blog h2{
     padding-left: 40px;
@@ -331,11 +384,13 @@ footer a{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
+    padding: 40px;
 }
 .blog-block{
     display:flex;
     flex-direction: column;
     margin: 25px 0px;
+    justify-content: space-between;
 }
 .blog-block img{
     width: 100%;
@@ -343,7 +398,7 @@ footer a{
     object-fit: cover;
 }
 .blog-block h3{
-    font-size:2rem;
+    font-size:20px;
     padding: 20px;
 }
 .blog-block p{
@@ -351,7 +406,8 @@ footer a{
     display: flex;
     align-items: center;
     padding-left:20px;
-    font-size:1.2rem;
+    font-size:12px;
+    gap: 10px;
 }
 .blog-page{
     padding:80px;
@@ -440,16 +496,19 @@ footer a{
 }
 @media screen and (min-width: 769px) {
     h1, h2{
-        font-size: 3.3rem;
+        font-size: 33px;
     }
-    p, li, #email, #btn, #langue, .navbar a {
-        font-size: 1.5rem;
+    p, li, #email, #btn {
+        font-size: 16px;
+    }
+    .navbar a, #langue{
+        font-size: 14px;
     }
     .navbar ul{
         display: flex;
     }
     .block-1-text h1{
-        padding-right:20%;
+        padding-right:35%;
     }
     header{
         padding: 0 40px;
