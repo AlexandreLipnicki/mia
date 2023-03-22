@@ -1,5 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@media screen and (max-width: 576px) {
+    /* GENERAL */
+        h1, h2{
+            font-size: 18px;
+        }
+        p, li, #langue, #btn, #email{
+            font-size: 12px;
+        }
+        header{
+            padding: 0 20px;
+        }
+        footer{
+            padding:20px 40px;
+        }
+        .logo{
+            justify-content:center;
+        }
+        .navbar{
+            display:none;
+        }
+
+    /* HOME */
+        .block-1{
+            padding:0 40px;
+            height: 50vh;
+        }
+        .block-1-text{
+            width: 350px;
+            padding: 40px 20px;
+        }
+        .block-2, .block-3, .block-4{
+            flex-direction: column;
+            padding:40px;
+        }
+        .block-2-txt, .block-2-email, .block-3-txt, .block-3-img, .block-4 h2{
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: center;
+        }
+        .block-2-txt h2{
+            padding-bottom:30px;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+        .block-3-img{
+            margin:0;
+            margin-top:40px;
+        }
+
+    /* MIA */
+    .mia-img{
+        display:none;
+    }
+    #blog-container{
+        padding:0px;
+        grid-template-columns: 1fr;
+    }
+    .blog-block p{
+        justify-content: center;
+    }
+
+    /*  */
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    h1, h2{
+        font-size: 24px;
+    }
+    p, li, #langue, #btn, #email{
+        font-size: 14px;
+    }
+    header{
+        padding: 0 40px;
+    }
+    .navbar{
+        display:none;
+    }
+    .logo{
+        justify-content:center;
+    }
+    .block-1{
+        height: 90vh;
+        padding: 0px 60px;
+    }
+    .block-1-text{
+        width: 400px;
+        padding: 50px 30px;
+    }
+    .block-2, .block-3{
+        flex-direction: column;
+    }
+    .block-2-txt, .block-2-email, .block-3-txt, .block-3-img, .block-4 h2{
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .block-2-txt h2{
+        padding-bottom:40px;
+        text-align: center;
+    }
+    .mia-img{
+        display:none;
+    }
+    .mia-block{
+        padding: 40px;
+    }
+    #blog-container{
+        grid-template-columns: 1fr;
+    }
+    .blog-block p, .blog-block h3{
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) {
+    h1, h2{
+        font-size: 33px;
+    }
+    p, li, #email, #btn {
+        font-size: 16px;
+    }
+    .navbar a, #langue{
+        font-size: 14px;
+    }
+    .navbar{
+        display: flex;
+    }
+    header{
+        padding: 0 40px;
+    }
+    #header-svg{
+        display:none;
+    }
+    .block-1{
+        height: 90vh;
+        padding:0px 80px;
+    }
+    .block-1-text{
+        width: 600px;
+        padding: 60px 40px;
+    }
+    .block-2-email, .block-2-txt{
+        width: 50%;
+    }
+    .block-5-txt{
+        width:60%;
+    }
+    .mia-block{
+        max-width: 50%;
+    }
+}
+
 /* ------------------  GENERAL + NAVBAR ------------------ */
 * {
     box-sizing: border-box;
@@ -11,7 +165,6 @@ a{
     color:#111;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: "Poppins";
     font-weight: 600;
     line-height: 1.2;
 }
@@ -20,13 +173,13 @@ body {
     color: #111;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     line-height: 1.5;
 }
 body::-webkit-scrollbar {
     width: 0;
 }
 header {
+    position:relative;
     height: 10vh;
     display:flex;
     justify-content: space-between;
@@ -46,13 +199,31 @@ footer a{
     color: #666666;
     font-size:12px;
 }
-.header-svg{
-    display:flex;
+#header-svg{
     justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+#header-modal{
+    position:absolute;
+    z-index:100;
+    top: 9vh;
+    right:0;
+    background: white;
+}
+#header-modal a{
+    width: 100%;
+    padding: 20px 100px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(102,102,102,0.25);
+}
+#header-modal li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .navbar {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
@@ -61,7 +232,7 @@ footer a{
     align-items: center;
 }
 .navbar ul {
-    display:none;
+    display:flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -102,8 +273,6 @@ footer a{
 /* ------------------  HOME ------------------ */
 .block-1 {
     width: 100%;
-    height: 90vh;
-    padding: 0 80px;
     background-image: url(../img/Mirror404-homepagebanniere.jpg);
     background-size: cover;
     background-position: center;
@@ -113,10 +282,7 @@ footer a{
     box-sizing: border-box;
 }
 .block-1-text{
-    width: 100%;
-    max-width: 600px;
     height: 70%;
-    padding: 60px 40px;
     border-radius:26px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
@@ -126,6 +292,7 @@ footer a{
 }
 .block-1-text h1{
     padding-bottom: 40px;
+    padding-right: 30%;
 }
 .block-2{
     width:100%;
@@ -134,9 +301,7 @@ footer a{
     border-bottom: #E5E5E5 1px solid;
 }
 .block-2-email, .block-2-txt{
-    width: 50%;
     display:flex;
-    align-items: center;
 }
 .block-2-email{
     justify-content: flex-start;
@@ -434,100 +599,4 @@ footer a{
     justify-content: center;
     align-items: center;
     gap:10px;
-}
-
-@media screen and (max-width: 576px) {
-    body{
-        text-align: center;
-    }
-    h1, h2{
-        font-size: 2.25rem;
-    }
-    p, li, #langue, #btn, #email{
-        font-size: 1.25rem;
-    }
-    li{
-        text-align: left;
-    }
-    header{
-        padding: 0 20px;
-    }
-    .header-svg, .navbar, .logo{
-        width:33%;
-    }
-    .logo{
-        justify-content:center;
-    }
-    .block-2, .block-3{
-        flex-direction: column;
-    }
-    .block-2-txt, .block-2-email, .block-3-txt, .block-3-img, .block-4 h2{
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .block-2-txt h2{
-        padding-bottom:30px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .block-3-img{
-        margin:0;
-        margin-top:40px;
-    }
-    .mia-img{
-        display:none;
-    }
-}
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    h1, h2{
-        font-size: 2.75rem;
-    }
-    p, li, #langue, #btn, #email{
-        font-size: 1.33rem;
-    }
-    .block-1-text h1{
-        padding-right:20%;
-    }
-    header{
-        padding: 0 40px;
-    }
-    .header-svg, .navbar, .logo{
-        width:33%;
-    }
-    .logo{
-        justify-content:center;
-    }
-    .mia-img{
-        display:none;
-    }
-}
-@media screen and (min-width: 769px) {
-    h1, h2{
-        font-size: 33px;
-    }
-    p, li, #email, #btn {
-        font-size: 16px;
-    }
-    .navbar a, #langue{
-        font-size: 14px;
-    }
-    .navbar ul{
-        display: flex;
-    }
-    .block-1-text h1{
-        padding-right:35%;
-    }
-    header{
-        padding: 0 40px;
-    }
-    .header-svg{
-        display:none;
-    }
-    .block-5-txt{
-        width:60%;
-    }
-    .mia-block{
-        max-width: 50%;
-    }
 }

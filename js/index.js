@@ -22,3 +22,25 @@ function changeLang() {
 }
 changeLang();
 langue.addEventListener('change', changeLang);
+
+let burger = document.getElementById('header-svg');
+let modal = document.getElementById('header-modal');
+
+// Ouvre et ferme le modal lorsque l'on clique sur le burger
+burger.addEventListener('click', function (event) {
+    event.stopPropagation(); // empêche la fermeture du modal lors du clic sur le burger
+    if (modal.style.display === 'none') {
+        modal.style.display = 'block';
+    } else {
+        modal.style.display = 'none';
+    }
+});
+
+// Ferme le modal lorsqu'on clique n'importe où sur la page
+document.addEventListener('click', function () {
+    modal.style.display = 'none';
+});
+
+
+
+    
