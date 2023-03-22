@@ -129,6 +129,9 @@
     .navbar{
         display: flex;
     }
+    .navbar ul{
+        display: flex;
+    }
     header{
         padding: 0 40px;
     }
@@ -232,7 +235,6 @@ footer a{
     align-items: center;
 }
 .navbar ul {
-    display:flex;
     list-style: none;
     margin: 0;
     padding: 0;
