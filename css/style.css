@@ -118,7 +118,7 @@ footer a{
 @media screen and (max-width: 576px) {
     /* GENERAL */
         h1, h2{
-            font-size: 18px;
+            font-size: 22px;
         }
         p, li, #langue, #btn, #email{
             font-size: 12px;
@@ -159,6 +159,7 @@ footer a{
             padding: 40px 30px;
         }
         .block-1-text h1{
+            font-size:18px;
             padding-bottom: 20px;
             padding-right: 30%;
         }
@@ -450,16 +451,19 @@ footer a{
         }
         .blog-block img{
             width: 40%;
+            height: 100%;
+            max-height: 200px;
             object-fit: cover;
         }
         .blog-block-txt{
+            padding:20px 0px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         .blog-block h3{
-            font-size:16px;
-            padding: 20px;
+            font-size:18px;
+            padding: 0px 20px;
         }
         .blog-block p{
             width:100%;
