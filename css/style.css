@@ -104,6 +104,7 @@ footer a{
     height: 45px;
     padding-left: 20px;
     width: 100%;
+    font-family: 'Poppins';
 }
 #btn{
     background-color: #111;
@@ -113,6 +114,7 @@ footer a{
     width: 176px;
     height: 45px;
     cursor: pointer;
+    font-family: 'Poppins';
 }
 
 @media screen and (max-width: 576px) {
@@ -186,11 +188,8 @@ footer a{
             display:flex;
         }
         .block-2-email{
-            justify-content: flex-start;
-            align-items: center;
-        }
-        .block-2-email input{
-            margin-right: 20px;
+            flex-direction: column;
+            gap:15px;
         }
         .block-3{
             width:100%;
@@ -269,20 +268,26 @@ footer a{
         }
         .mia-text li{
             list-style-position: inside;
-            font-size:12px;
+            font-size:14px;
         }
         .mia-text #btn, .mia-text #email{
-            font-size: 12px;
-            height: 38px;
+            font-family: 'Poppins';
+            font-size: 14px;
+            height: 50px;
             border-radius: 8px;
         }
         .form{
             width:100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             gap:15px;
             padding-top:20px;
+            padding-bottom:150px;
+        }
+        .form #btn{
+            margin-right: auto;
         }
 
         /* MANIFESTO */
@@ -323,7 +328,6 @@ footer a{
         /* CARRIERE */
         .carriere-img{
             width:100%;
-            height: 60vh;
         }
         .carriere-img img{
             width:100%;
@@ -336,7 +340,6 @@ footer a{
         }
         .carriere-block h1{
             font-size:24px;
-            padding-bottom: 20px;
         }
         .carriere-block p{
             font-size:16px;
@@ -364,7 +367,6 @@ footer a{
             width:100%;
             font-size:16px;
             font-weight: bold;
-            text-align: center;
             padding-bottom:10px;
         }
         .poste-type{
