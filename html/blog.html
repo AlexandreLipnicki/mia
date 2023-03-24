@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="../css/style.css">
     <title>Mia | Mirror 404</title>
 </head>
 <body>
     <header>
-        <div class="header-svg">
-            <svg width="5vh" height="5vh" viewBox="0 0 24 24" fill="none">
-                <path d="M4 18L20 18" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 12L20 12" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 6L20 6" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </div>
         <div class="logo"><div Style="background:grey;border-radius:100%;width:40px;height:40px;"></div></div>
         <div class="navbar">
             <ul>
@@ -26,9 +19,25 @@
                 <li><a id="black" href="./blog.html">Blog</a></li>
             </ul>
             <select name="langue" id="langue">
-                <option value="fr">Français</option>
                 <option value="eng">English</option>
+                <option value="fr">Français</option>
             </select>
+        </div>
+        <div id="header-svg">
+            <svg width="5vh" height="5vh" viewBox="0 0 24 24" fill="none">
+                <path d="M4 18L20 18" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12L20 12" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 6L20 6" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div id="header-modal" style="display:none;">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./mia.html">Mia</a></li>
+                <li><a href="./manifesto.html">Manifesto</a></li>
+                <li><a href="./carriere.html">Carrière</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
         </div>
     </header>
     <div class="blog-1">
@@ -46,51 +55,63 @@
         <div id="blog-container">
             <a href="./blogs/design.html" class="blog-block">
                 <img src="../img/mia-mirror404.jpeg" alt="">
-                <h3>Pourquoi on a crée Mirror 404 ?</h3>
-                <p>
-                    Read Article
-                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </p>
+                <div class="blog-block-txt">
+                    <h3>Pourquoi on a crée Mirror 404 ?</h3>
+                    <p>
+                        Read Article
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </p>
+                </div>
             </a>
             <a href="./blogs/design.html"  class="blog-block">
                 <img src="../img/mia-mirror404.jpeg" alt="">
-                <h3>Qu’est ce que l’intelligence artficielle ?</h3>
-                <p>
-                    Read Article
-                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </p>
+                <div class="blog-block-txt">
+                    <h3>Qu’est ce que l’intelligence artficielle ?</h3>
+                    <p>
+                        Read Article
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </p>
+                </div>
             </a>
             <a href="./blogs/design.html"  class="blog-block">
                 <img src="../img/mia-mirror404.jpeg" alt="">
-                <h3>Pourquoi l’intelligence artificelle est libératrice ?</h3>
-                <p>
-                    Read Article
-                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </p>
+                <div class="blog-block-txt">
+                    <h3>Pourquoi l’intelligence artificelle est libératrice ?</h3>
+                    <p>
+                        Read Article
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </p>
+                </div>
             </a>
             <a href="./blogs/design.html"  class="blog-block">
                 <img src="../img/mia-mirror404.jpeg" alt="">
-                <h3>Qu’est ce qu’une IA éthique ?</h3>
-                <p>
-                    Read Article
-                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </p>
+                <div class="blog-block-txt">
+                    <h3>Qu’est ce qu’une IA éthique ?</h3>
+                    <p>
+                        Read Article
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </p>
+                </div>
             </a>
             <a href="./blogs/design.html"  class="blog-block">
                 <img src="../img/mia-mirror404.jpeg" alt="">
-                <h3>L’IA est le reflet de ce qu’on lui apprend</h3>
-                <p>
-                    Read Article
-                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </p>
+                <div class="blog-block-txt">
+                    <h3>L’IA est le reflet de ce qu’on lui apprend</h3>
+                    <p>
+                        Read Article
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </p>
+                </div>
             </a>
             <a href="./blogs/design.html"  class="blog-block">
                 <img src="../img/mia-mirror404.jpeg" alt="">
-                <h3>Est-ce que l’IA peut avoir une conscience ?</h3>
-                <p>
-                    Read Article
-                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </p>
+                <div class="blog-block-txt">
+                    <h3>Est-ce que l’IA peut avoir une conscience ?</h3>
+                    <p>
+                        Read Article
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 12L4 12" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </p>
+                </div>
             </a>
         </div>
     </div>
