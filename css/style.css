@@ -109,18 +109,27 @@ footer a {
   justify-content: flex-end;
   align-items: center;
   width: 33%;
+  height: 100%;
 }
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 .navbar li {
   padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 14px;
 }
 .navbar a {
   text-decoration: none;
   color: rgba(102, 102, 102, 0.8);
+}
+.navbar input {
+  line-height: 14px;
 }
 
 .logo {
@@ -130,7 +139,7 @@ footer a {
   height: 100%;
 }
 .logo svg{
-  height: 33%;
+  height: 40%;
 }
 
 #black {
