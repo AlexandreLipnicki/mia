@@ -156,7 +156,7 @@ footer a {
 #email {
   border-radius: 12px;
   border: 1px solid #E5E5E5;
-  height: 45px;
+  height: 40px;
   padding-left: 20px;
   width: 100%;
   font-family: "Poppins";
@@ -168,7 +168,7 @@ footer a {
   border: none;
   border-radius: 12px;
   width: 176px;
-  height: 45px;
+  height: 40px;
   cursor: pointer;
   font-family: "Poppins";
 }
@@ -236,19 +236,6 @@ footer a {
     font-size: 18px;
     padding-bottom: 20px;
   }
-  .block-2 {
-    flex-direction: column;
-    width: 100%;
-    padding: 40px 20px;
-    display: flex;
-  }
-  .block-3 {
-    flex-direction: column;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
   .block-4 {
     flex-direction: column;
     width: 100%;
@@ -260,57 +247,6 @@ footer a {
     padding-right: 0;
     justify-content: center;
     font-size: 22px;
-  }
-  .block-2-email {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .block-3-txt {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
-  }
-  .block-3-txt p {
-    margin-top: 40px;
-    text-align: justify;
-    font-size: 16px;
-    padding: 20px;
-  }
-  .block-3-img {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
-    height: 400px;
-    padding-right: 0;
-    margin: 0;
-    margin-top: 40px;
-  }
-  .block-3-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .block-2-txt {
-    display: flex;
-  }
-  .block-2-txt h2 {
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .mobile-title {
-    padding-left: 20px;
-    font-size: 22px;
-  }
-  .block-3-title {
-    display: none;
   }
   .mia-inner {
     display: flex;
@@ -666,45 +602,6 @@ footer a {
   .block-1-text p {
     font-size: 16px;
   }
-  .block-2-email {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .block-2-email input {
-    margin-right: 20px;
-  }
-  .block-3-txt {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
-    width: 100%;
-    padding: 40px;
-  }
-  .block-3-txt p {
-    margin-top: 40px;
-    text-align: justify;
-    font-size: 20px;
-  }
-  .block-3-img {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
-    width: 100%;
-    height: 600px;
-    padding-right: 0;
-  }
-  .block-3-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .block-4 {
     width: 100%;
     padding: 40px;
@@ -714,32 +611,6 @@ footer a {
     padding-left: 0;
     padding-right: 0;
     justify-content: center;
-  }
-  .block-2 {
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .block-2-txt {
-    display: flex;
-  }
-  .block-2-txt h2 {
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .mobile-title {
-    padding: 40px;
-  }
-  .block-3 {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .block-3-title {
-    display: none;
   }
   .mia-inner {
     display: flex;
@@ -1072,31 +943,34 @@ footer a {
   }
   .block-1-text {
     width: 50%;
-    padding: 60px 40px;
+    padding: 0px 40px;
     height: 70%;
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap:20px;
     color: white;
   }
-  .block-1-text h1 {
-    padding-bottom: 40px;
-    padding-right: 30%;
+  .block-1-email-txt{
+    font-size: 12px;
+    font-weight: 700;
   }
-  .block-2-email {
-    width: 50%;
+  .block-1-email{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    gap: 20px;
+    width: 100%;
   }
-  .block-2-email input {
-    margin-right: 20px;
+  .block-1-email #email{
+    background-color: transparent;
+    font-size: 12px;
+    border: 1px solid #505050;
   }
-  .block-2-txt {
-    width: 50%;
-    display: flex;
+  .block-1-email #btn {
+    background-color: white;
+    color:#111;
+    border-radius: 32px;
   }
   .block-5-txt {
     width: 60%;
@@ -1108,41 +982,6 @@ footer a {
     justify-content: center;
     align-items: center;
     padding: 0 100px;
-  }
-  .mobile-title {
-    display: none;
-  }
-  .block-2 {
-    width: 100%;
-    padding: 40px 80px;
-    display: flex;
-    border-bottom: #E5E5E5 1px solid;
-  }
-  .block-3 {
-    width: 100%;
-    padding: 80px;
-    display: flex;
-    align-items: center;
-  }
-  .block-3-txt {
-    width: 50%;
-    padding-right: 100px;
-  }
-  .block-3-txt p {
-    margin-top: 40px;
-    text-align: justify;
-    font-size: 14px;
-  }
-  .block-3-img {
-    width: 50%;
-    height: 400px;
-    margin-left: 40px;
-    padding-right: 0;
-  }
-  .block-3-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
   .block-4 {
     width: 100%;
