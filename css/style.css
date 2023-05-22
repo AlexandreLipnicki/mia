@@ -61,6 +61,10 @@ header {
   border-bottom: 1px solid rgba(102, 102, 102, 0.25);
 }
 
+header div{
+  width: 33%;
+}
+
 footer {
   width: 100%;
   padding: 20px 80px;
@@ -104,6 +108,7 @@ footer a {
 .navbar {
   justify-content: flex-end;
   align-items: center;
+  width: 33%;
 }
 .navbar ul {
   list-style: none;
@@ -121,6 +126,11 @@ footer a {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.logo svg{
+  height: 50%;
 }
 
 #black {
@@ -1049,7 +1059,7 @@ footer a {
     height: 100%;
     position: absolute;
     top: 0;
-    right: -200px;
+    right: -150px;
   }
   .block-1-text {
     width: 50%;
